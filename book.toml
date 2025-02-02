@@ -1,0 +1,28 @@
+[book]
+authors = ["Cody Duncan graphicsprogrammingwiki@codyduncan.net"]
+language = "en"
+multilingual = false
+src = "src"
+title = "\"r/GraphicsProgramming Wiki\""
+
+[output.html]
+default-theme = "navy"
+preferred-dark-theme = "navy"
+smart-punctuation = true
+mathjax-support = true
+git-repository-url = "https://github.com/Cody-Duncan/r-graphicsprogramming-wiki"
+git-repository-icon = "fa-github"
+edit-url-template = "https://github.com/Cody-Duncan/r-graphicsprogramming-wiki/edit/main"
+site-url = "/example-book/"
+cname = "myproject.rs"
+input-404 = "not-found.md"
+
+[output.html.playground]
+editable = true
+
+[output.html.print]
+enable = false
+
+[output.html.fold]
+enable = false
+level = 1
