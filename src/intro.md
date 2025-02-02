@@ -7,7 +7,7 @@ Wiki for [r/GraphicsProgramming](https://www.reddit.com/r/GraphicsProgramming/)
 - [Want to get started in Graphics Programming? Start Here!](https://www.reddit.com/r/GraphicsProgramming/comments/1hry6wx/want_to_get_started_in_graphics_programming_start/) 
   - by [u/waramped](https://www.reddit.com/user/waramped/)  [u/CorySama](https://www.reddit.com/user/CorySama/) and [u/Better_Pirate_7823](https://www.reddit.com/user/Better_Pirate_7823/)
   - Lovingly reproduced at - [in this wiki](./start_here.md)
-
+- [History of Graphics series](./history_of_graphics.md) by [u/Boojum](https://www.reddit.com/user/Boojum/)
 
 ## FAQ
 
