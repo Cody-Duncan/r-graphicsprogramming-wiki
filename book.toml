@@ -15,7 +15,6 @@ git-repository-icon = "fa-github"
 edit-url-template = "https://github.com/Cody-Duncan/r-graphicsprogramming-wiki/edit/main"
 site-url = "/example-book/"
 cname = "myproject.rs"
-input-404 = "not-found.md"
 
 [output.html.playground]
 editable = true
