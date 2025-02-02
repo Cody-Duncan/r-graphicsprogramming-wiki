@@ -1,4 +1,6 @@
 # Want to get started in Graphics Programming? Start Here!
+by [u/waramped](https://www.reddit.com/user/waramped/) at [original reddit post](https://www.reddit.com/r/GraphicsProgramming/comments/1hry6wx/want_to_get_started_in_graphics_programming_start)  
+edited by [u/CodyDuncan1260](https://www.reddit.com/user/CodyDuncan1260/) for mdbook
 
 First of all, credit goes to [u/CorySama](https://www.reddit.com/user/CorySama/) and [u/Better_Pirate_7823](https://www.reddit.com/user/Better_Pirate_7823/) for most of this, I am mostly just copy-pasting from them.
 If all goes well, we can Sticky this for everyone to see.
