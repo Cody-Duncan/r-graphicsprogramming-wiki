@@ -4,7 +4,8 @@ First of all, credit goes to [u/CorySama](https://www.reddit.com/user/CorySama/)
 If all goes well, we can Sticky this for everyone to see.
 
 Courtesy of u/CorySama:
-The main thing you need to know is https://fgiesen.wordpress.com/2016/02/05/smart/
+The main thing you need to know is [“Smart”](https://fgiesen.wordpress.com/2016/02/05/smart) by [Fabian “ryg” Giesen](https://fgiesen.wordpress.com/)
+
 
 OpenGL is a good API to start with. There's a lot to learn regardless of which API you use. Once you can do an animated character in a scene with lighting, shadows, particles and basic full-screen post processing, you'll know how to proceed forward on your own from there.
 
