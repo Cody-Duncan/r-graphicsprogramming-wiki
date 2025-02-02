@@ -2,6 +2,8 @@
 
 List of freely available resources to study computer graphics programming. Composed by [u/Better_Pirate_7823](https://www.reddit.com/user/Better_Pirate_7823/) 
 
+This list is aimed towards people that are looking for concrete resources with a field of interest in mind. In case you are just starting out, please refer to the [Start here](./start_here.md) chapter.
+
 ## Basic Path
 0. [Creative Coding for Beginners](https://thecodingtrain.com/tracks/learning-processing/processing) [video]
 1. [Learn C++](https://www.learncpp.com) [book]
