@@ -13,8 +13,6 @@ mathjax-support = true
 git-repository-url = "https://github.com/Cody-Duncan/r-graphicsprogramming-wiki"
 git-repository-icon = "fa-github"
 edit-url-template = "https://github.com/Cody-Duncan/r-graphicsprogramming-wiki/edit/main"
-site-url = "/example-book/"
-cname = "myproject.rs"
 
 [output.html.playground]
 editable = true
