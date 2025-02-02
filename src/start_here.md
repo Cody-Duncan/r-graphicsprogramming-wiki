@@ -9,24 +9,31 @@ The main thing you need to know is https://fgiesen.wordpress.com/2016/02/05/smar
 OpenGL is a good API to start with. There's a lot to learn regardless of which API you use. Once you can do an animated character in a scene with lighting, shadows, particles and basic full-screen post processing, you'll know how to proceed forward on your own from there.
 
 ## Learning Resources
-- <https://learnopengl.com/> - Learn OpenGL
-- <https://raytracing.github.io/> - *Ray Tracing in One Weekend* book series 
+- Learn OpenGL 
+  - <https://learnopengl.com>
+- *Ray Tracing in One Weekend* book series
+  - <https://raytracing.github.io> 
   - by [Peter Shirley](https://www.petershirley.com/), [Trevor D Black](https://trevord.black/), and [Steve Hollasch](http://steve.hollasch.net/cgindex/index.html)
-- <https://gamemath.com/book/> - *3D math Primer for Graphics and Game Development*
+- *3D math Primer for Graphics and Game Development*
+  - <https://gamemath.com/book>
   - by [Fletcher Dunn](https://www.reddit.com/user/FletcherDunn/) and [Ian Parbery](https://ianparberry.com/)
-- <https://www.gameenginebook.com/> - "Game Engine Architecture, Third Edition" 
+- *Game Engine Architecture, Third Edition* 
+  - <https://www.gameenginebook.com>
   - by Jason Gregory
-- <https://realtimerendering.com/> - *Real-Time Rendering, 4th Edition* 
+- *Real-Time Rendering, 4th Edition* 
+  - <https://realtimerendering.com>
   - by [Tomas Akenine-Möller](http://cs.lth.se/tomas_akenine-moller), [Eric Haines](http://www.erichaines.com/), [Naty Hoffman](http://www.renderwonk.com/), [Angelo Pesce](http://c0de517e.blogspot.com/), [Michał Iwanicki](https://twitter.com/miwanicki), and [Sébastien Hillaire](https://sebh.github.io/)
-- <https://google.github.io/filament/Filament.md.html> - *Physically Based Rendering in [Filament](https://github.com/google/filament)*
+- *Physically Based Rendering in [Filament](https://github.com/google/filament)*
+  - <https://google.github.io/filament/Filament.md.html>
   - by [Romain Guy](https://github.com/romainguy) [@romainguy](https://bsky.app/profile/romainguy.dev) and [Mathias Agopian](https://github.com/pixelflinger) (at google) 
-- <https://fgiesen.wordpress.com/2011/07/09/a-trip-through-the-graphics-pipeline-2011-index/> - *A trip through the Graphics Pipeline 2011* 
+- *A trip through the Graphics Pipeline 2011*
+  - <https://fgiesen.wordpress.com/2011/07/09/a-trip-through-the-graphics-pipeline-2011-index>
   - by [Fabian “ryg” Giesen](https://fgiesen.wordpress.com/)
 
 ## Tools
 
-- <https://developer.nvidia.com/nsight-graphics> - NVIDIA NSight Graphics by NVIDIA
-- <https://renderdoc.org/> - RenderDoc
+- NVIDIA NSight Graphics by NVIDIA - <https://developer.nvidia.com/nsight-graphics>
+- RenderDoc - <https://renderdoc.org> 
 
 ## Introductory Overview Videos
 
