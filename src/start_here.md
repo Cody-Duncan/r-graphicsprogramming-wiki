@@ -10,12 +10,18 @@ OpenGL is a good API to start with. There's a lot to learn regardless of which A
 
 ## Learning Resources
 - <https://learnopengl.com/> - Learn OpenGL
-- <https://raytracing.github.io/> - "Ray Tracing in One Weekend" book series by [Peter Shirley](https://www.petershirley.com/), [Trevor D Black](https://trevord.black/), and [Steve Hollasch](http://steve.hollasch.net/cgindex/index.html)
-- <https://gamemath.com/book/> - 3D math Primer for Graphics and Game Development by [Fletcher Dunn](https://www.reddit.com/user/FletcherDunn/) and [Ian Parbery](https://ianparberry.com/)
-- <https://www.gameenginebook.com/> - "Game Engine Architecture, Third Edition" by Jason Gregory
-- <https://realtimerendering.com/> - "Real-Time Rendering, 4th Edition" by [Tomas Akenine-Möller](http://cs.lth.se/tomas_akenine-moller), [Eric Haines](http://www.erichaines.com/), [Naty Hoffman](http://www.renderwonk.com/), [Angelo Pesce](http://c0de517e.blogspot.com/), [Michał Iwanicki](https://twitter.com/miwanicki), and [Sébastien Hillaire](https://sebh.github.io/)
-- <https://google.github.io/filament/Filament.md.html> - Physically Based Rendering in [Filament](https://github.com/google/filament) (by google) by [Romain Guy](https://github.com/romainguy) [@romainguy](https://bsky.app/profile/romainguy.dev) and [Mathias Agopian](https://github.com/pixelflinger)
-- <https://fgiesen.wordpress.com/2011/07/09/a-trip-through-the-graphics-pipeline-2011-index/> - "A trip through the Graphics Pipeline 2011" by [Fabian “ryg” Giesen](https://fgiesen.wordpress.com/)
+- <https://raytracing.github.io/> - *Ray Tracing in One Weekend* book series 
+  - by [Peter Shirley](https://www.petershirley.com/), [Trevor D Black](https://trevord.black/), and [Steve Hollasch](http://steve.hollasch.net/cgindex/index.html)
+- <https://gamemath.com/book/> - *3D math Primer for Graphics and Game Development*
+  - by [Fletcher Dunn](https://www.reddit.com/user/FletcherDunn/) and [Ian Parbery](https://ianparberry.com/)
+- <https://www.gameenginebook.com/> - "Game Engine Architecture, Third Edition" 
+  - by Jason Gregory
+- <https://realtimerendering.com/> - *Real-Time Rendering, 4th Edition* 
+  - by [Tomas Akenine-Möller](http://cs.lth.se/tomas_akenine-moller), [Eric Haines](http://www.erichaines.com/), [Naty Hoffman](http://www.renderwonk.com/), [Angelo Pesce](http://c0de517e.blogspot.com/), [Michał Iwanicki](https://twitter.com/miwanicki), and [Sébastien Hillaire](https://sebh.github.io/)
+- <https://google.github.io/filament/Filament.md.html> - *Physically Based Rendering in [Filament](https://github.com/google/filament)*
+  - by [Romain Guy](https://github.com/romainguy) [@romainguy](https://bsky.app/profile/romainguy.dev) and [Mathias Agopian](https://github.com/pixelflinger) (at google) 
+- <https://fgiesen.wordpress.com/2011/07/09/a-trip-through-the-graphics-pipeline-2011-index/> - *A trip through the Graphics Pipeline 2011* 
+  - by [Fabian “ryg” Giesen](https://fgiesen.wordpress.com/)
 
 ## Tools
 
@@ -35,15 +41,19 @@ OpenGL is a good API to start with. There's a lot to learn regardless of which A
 - [Tiny RayCaster](https://github.com/ssloy/tinyraycaster/wiki)
 - [Tiny Renderer](https://github.com/ssloy/tinyrenderer/wiki)
 - [Rasterization in One Weekend](https://tayfunkayhan.wordpress.com/2018/11/24/rasterization-in-one-weekend/)
-- [Ray Tracing in One Weekend](https://raytracing.github.io/) book series by [Peter Shirley](https://www.petershirley.com/), [Trevor D Black](https://trevord.black/), and [Steve Hollasch](http://steve.hollasch.net/cgindex/index.html)
+- [Ray Tracing in One Weekend](https://raytracing.github.io/) book series 
+  - by [Peter Shirley](https://www.petershirley.com/), [Trevor D Black](https://trevord.black/), and [Steve Hollasch](http://steve.hollasch.net/cgindex/index.html)
 - [Implementing a Tiny CPU Rasterizer](https://lisyarus.github.io/blog/posts/implementing-a-tiny-cpu-rasterizer.html)
 - [Scratchapixel](https://www.scratchapixel.com/) (slow web page, but still functional)
 
 ## Graphics Pipeline and Architecture 
 
 - [Graphics Pipelines for Young Bloods](https://www.jeremyong.com/cpp/2021/05/20/graphics-pipelines-for-young-bloods/)
-- [A Trip Through The Graphics Pipeline](https://alaingalvan.gitbook.io/a-trip-through-the-graphics-pipeline) by [Fabian “ryg” Giesen](https://fgiesen.wordpress.com/) as cloned by [Alain Galvan](https://github.com/alaingalvan)
-- [GPU Architectures](https://drive.google.com/file/d/12ahbqGXNfY3V-1Gj5cvne2AH4BFWZHGD/view?pli=1) by [Maurizio Cerrato @speedwago](https://bsky.app/profile/speedwago.bsky.social)
+- [A Trip Through The Graphics Pipeline](https://alaingalvan.gitbook.io/a-trip-through-the-graphics-pipeline) 
+  - by [Fabian “ryg” Giesen](https://fgiesen.wordpress.com/) 
+  - as cloned by [Alain Galvan](https://github.com/alaingalvan)
+- [GPU Architectures](https://drive.google.com/file/d/12ahbqGXNfY3V-1Gj5cvne2AH4BFWZHGD/view?pli=1) 
+  - by [Maurizio Cerrato @speedwago](https://bsky.app/profile/speedwago.bsky.social)
 
 ## Youtube Channels:
 
