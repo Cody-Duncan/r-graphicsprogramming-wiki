@@ -9,7 +9,9 @@ Wiki for [r/GraphicsProgramming](https://www.reddit.com/r/GraphicsProgramming/)
   - original post [here](https://www.reddit.com/r/GraphicsProgramming/comments/1hry6wx/want_to_get_started_in_graphics_programming_start/) 
 - [History of Graphics series](./history_of_graphics.md)
   - by [u/Boojum](https://www.reddit.com/user/Boojum/)
-
+- [Extensive list of resources](./extensive_list_of_resource)
+  - by [u/Better_Pirate_7823](https://www.reddit.com/user/Better_Pirate_7823/)
+    
 ## FAQ
 
 #### *Why a web-book on github pages?*
