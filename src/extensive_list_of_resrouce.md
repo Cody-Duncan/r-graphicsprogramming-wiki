@@ -4,16 +4,6 @@ List of freely available resources to study computer graphics programming. Compo
 
 This list is aimed towards people that are looking for concrete resources with a field of interest in mind. In case you are just starting out, please refer to the [Start here](./start_here.md) chapter.
 
-## Basic Path
-0. [Creative Coding for Beginners](https://thecodingtrain.com/tracks/learning-processing/processing) [video]
-1. [Learn C++](https://www.learncpp.com) [book]
-2. [Essence of Linear Algebra](https://www.3blue1brown.com/topics/linear-algebra) [video] [article]
-3. [3D Math Primer for Graphics and Game Development](https://gamemath.com/) [book]
-4. [How do Video Game Graphics Work?](https://www.youtube.com/watch?v=C8YtdC8mxTU) [video]
-5. [Ray Tracing in One Weekend](https://raytracing.github.io/) [book]
-6. [Tiny Software Renderer](https://github.com/ssloy/tinyrenderer/wiki/Lesson-0:-getting-started) [article]
-7. [Learn OpenGL](https://learnopengl.com/) [book]
-
 ## Getting Started
 - [Graphics Programming – Where To Start?](https://www.stefanpijnacker.nl/article/graphics-programming-where-to-start/) [article]
 - [Getting Started In Computer Graphics](https://www.jeremyong.com/graphics/2024/05/19/getting-started-in-computer-graphics/) [article]
