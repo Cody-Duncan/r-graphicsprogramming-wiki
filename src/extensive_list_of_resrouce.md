@@ -4,15 +4,6 @@ List of freely available resources to study computer graphics programming. Compo
 
 This list is aimed towards people that are looking for concrete resources with a field of interest in mind. In case you are just starting out, please refer to the [Start here](./start_here.md) chapter.
 
-## Getting Started
-- [Graphics Programming – Where To Start?](https://www.stefanpijnacker.nl/article/graphics-programming-where-to-start/) [article]
-- [Getting Started In Computer Graphics](https://www.jeremyong.com/graphics/2024/05/19/getting-started-in-computer-graphics/) [article]
-- [How Do I Become a Graphics Programmer?](https://gpuopen.com/learn/how_do_you_become_a_graphics_programmer/) [article]
-- [How to Start Learning Computer Graphics Programming](https://erkaman.github.io/posts/beginner_computer_graphics.html) [article]
-- [Finding Your Home in Graphics Programming](https://alextardif.com/LearningGraphics.html) [article]
-- [What Is A Graphics Programmer?](https://www.youtube.com/watch?v=O-2viBhLTqI) [video]
-- [Self-Starting As A 3D Graphics Programmer](https://www.youtube.com/watch?v=b4iIg32g65s) [video]
-
 ## C++
 - [How to Start C++ Development?](https://github.com/W4RH4WK/cpp-init) [article]
 - [Learn C++](https://www.learncpp.com) [book]
