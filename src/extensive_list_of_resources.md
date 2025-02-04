@@ -1,6 +1,13 @@
 # Computer Graphics Programming Resources
 
-List of freely available resources to study computer graphics programming. Composed by [u/Better_Pirate_7823](https://www.reddit.com/user/Better_Pirate_7823/) 
+Originally posted [here](https://www.reddit.com/r/GraphicsProgramming/comments/1d5swt6/computer_graphics_programming_resources/), 
+edited and formatted on [Gist](https://gist.github.com/notnotrobby/ceef71527b4f15869133ba7b397912e9) by [u/Better_Pirate_7823](https://www.reddit.com/user/Better_Pirate_7823/). 
+
+Reviewed by [u/wpsimon](https://www.reddit.com/user/wpsimon/) 
+
+---
+
+List of freely available resources to study computer graphics programming.
 
 This list is aimed towards people that are looking for concrete resources with a field of interest in mind. In case you are just starting out, please refer to the [Start here](./start_here.md) chapter.
 
@@ -68,7 +75,6 @@ This list is aimed towards people that are looking for concrete resources with a
 - [A Guide to Modern OpenGL Functions](https://github.com/fendevel/Guide-to-Modern-OpenGL-Functions) [article]
 - [OpenGl Tutorials](https://www.youtube.com/playlist?list=PLPaoO-vpZnumdcb4tZc4x5Q-v7CkrQ6M-) [video]
 - [Docs GL - OpenGL Documentation](https://docs.gl/) [documentation]
-- [How to write a renderer for modern graphics APIs](https://blog.mecheye.net/2023/09/how-to-write-a-renderer-for-modern-apis/) [article]
 - [MBSoftworks OpenGL Tutorials](https://www.mbsoftworks.sk/tutorials/) [article]
 - [An Intro to Modern OpenGL](https://duriansoftware.com/joe/an-intro-to-modern-opengl.-table-of-contents) [book]
 - [OpenGL Hardware Database](https://opengl.gpuinfo.org/) [other]
@@ -90,7 +96,7 @@ This list is aimed towards people that are looking for concrete resources with a
 - [RenderDoc](https://renderdoc.org/)
 - [NVIDIA Nsight Graphics](https://developer.nvidia.com/nsight-graphics)
 - [PIX](https://devblogs.microsoft.com/pix/introduction/)
-- [Rad Debugger](https://github.com/EpicGamesExt/raddebugger)
+- [RAD Debugger](https://github.com/EpicGamesExt/raddebugger)
 
 ## Vulkan
 - [Transitioning from OpenGL to Vulkan](https://developer.nvidia.com/transitioning-opengl-vulkan)
@@ -108,8 +114,11 @@ This list is aimed towards people that are looking for concrete resources with a
 - [Vulkan Lecture Series](https://www.youtube.com/playlist?list=PLmIqTlJ6KsE1Jx5HV4sd2jOe3V1KMHHgn) [video]
 - [Keen Games' Vulkan Backend Snapshot](https://github.com/keengames/vulkan_backend) [source code]
 - [Learn Vulkan from code samples](https://paminerva.github.io/docs/LearnVulkan/LearnVulkan) [article]
-- [NVIDIA Vulkan Ray Tracing Tutorial](https://github.com/nvpro-samples/vk_raytracing_tutorial_KHR/) [article]
+- [NVIDIA Vulkan Ray Tracing Tutorial](https://nvpro-samples.github.io/vk_raytracing_tutorial_KHR/) [article]
+- [Ray Tracing in Vulkan](https://www.khronos.org/blog/ray-tracing-in-vulkan)
 - [Vulkan's YouTube Channel](https://www.youtube.com/@Vulkan) [video]
+- [Vulkan C++ game engine tutorials](https://youtube.com/playlist?list=PL8327DO66nu9qYVKLDmdLW_84-yE4auCR&si=ACBr1r6B8heGStsV) [video]
+- [Vulkan DO's and DONT's](https://developer.nvidia.com/blog/vulkan-dos-donts/) [article]
 
 ## DirectX 11
 - [DirectX 11 Documentation](https://learn.microsoft.com/en-us/windows/win32/direct3d11/atoc-dx-graphics-direct3d-11)
@@ -245,3 +254,7 @@ This list is aimed towards people that are looking for concrete resources with a
 
 - [r/GraphicsProgramming](https://old.reddit.com/r/GraphicsProgramming/)
 - [Graphics Programming Discord](https://discord.com/invite/m35J6Bk)
+
+## Others
+
+- [How to write a renderer for modern graphics APIs](https://blog.mecheye.net/2023/09/how-to-write-a-renderer-for-modern-apis/) [article]
