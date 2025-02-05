@@ -1,6 +1,8 @@
-History of Graphics
-===================
+# History of Graphics
+
 by [u/Boojum](https://www.reddit.com/user/Boojum/)
+
+---
 
 Some ideas for a "History of Graphics" series of posts:
 
