@@ -1,0 +1,483 @@
+<!DOCTYPE HTML>
+<html lang="en" class="navy sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Extensive list of resources - &quot;r/GraphicsProgramming Wiki&quot;</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('navy')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">&quot;r/GraphicsProgramming Wiki&quot;</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/Cody-Duncan/r-graphicsprogramming-wiki" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Cody-Duncan/r-graphicsprogramming-wiki/edit/main" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="computer-graphics-programming-resources"><a class="header" href="#computer-graphics-programming-resources">Computer Graphics Programming Resources</a></h1>
+<p>Originally posted <a href="https://www.reddit.com/r/GraphicsProgramming/comments/1d5swt6/computer_graphics_programming_resources/">here</a>,
+edited and formatted on <a href="https://gist.github.com/notnotrobby/ceef71527b4f15869133ba7b397912e9">Gist</a> by <a href="https://www.reddit.com/user/Better_Pirate_7823/">u/Better_Pirate_7823</a>.</p>
+<p>Reviewed by <a href="https://www.reddit.com/user/wpsimon/">u/wpsimon</a></p>
+<hr />
+<p>List of freely available resources to study computer graphics programming.</p>
+<p>This list is aimed towards people that are looking for concrete resources with a field of interest in mind. In case you are just starting out, please refer to the <a href="./start_here.html">Start here</a> chapter.</p>
+<h2 id="c"><a class="header" href="#c">C++</a></h2>
+<ul>
+<li><a href="https://github.com/W4RH4WK/cpp-init">How to Start C++ Development?</a> [article]</li>
+<li><a href="https://www.learncpp.com">Learn C++</a> [book]</li>
+<li><a href="https://hackingcpp.com/index.html">Hacking C++</a> [article]</li>
+<li><a href="https://cppbyexample.com/">C++ By Example</a> [article]</li>
+<li><a href="https://en.cppreference.com/w/">C++ Reference</a> [documentation]</li>
+<li><a href="https://github.com/AnthonyCalandra/modern-cpp-features">Modern C++ Features</a> [article]</li>
+<li><a href="https://www.w3resource.com/cpp-exercises/">C++ Programming Exercises</a> [other]</li>
+<li><a href="https://www.w3schools.com/dsa/index.php">Data Structures and Algorithms Tutorial</a> [article]</li>
+<li><a href="https://projecteuler.net/about">Project Euler</a> [other]</li>
+<li><a href="https://cppquiz.org/">Cpp Quiz</a> [other]</li>
+<li><a href="https://graphics.stanford.edu/~seander/bithacks.html">Bit Twiddling Hacks</a> [article]</li>
+<li><a href="https://www.dataorienteddesign.com/dodbook/">Data-Oriented Design</a> [book]</li>
+<li><a href="https://www.youtube.com/watch?v=PMpNhbMjDj0">How Binary Work, and The Power of Abstraction</a> [video]</li>
+</ul>
+<h2 id="mathematics"><a class="header" href="#mathematics">Mathematics</a></h2>
+<ul>
+<li><a href="https://www.mecmath.net/trig/">Trigonometry</a> [book]</li>
+<li><a href="https://www.youtube.com/playlist?list=PL8erL0pXF3JaFSMdokheNMvTa96jdc4GU">Calculus GREEN Vol 1: Asymptotics</a> [video]</li>
+<li><a href="https://www.youtube.com/playlist?list=PL8erL0pXF3JYm7VaTdKDaWc8Q3FuP8Sa7">Calculus BLUE Vol 1 : Vectors &amp; Matrices</a> [video]</li>
+<li><a href="https://www.3blue1brown.com/topics/linear-algebra">Essence of Linear Algebra</a> [article] [video]</li>
+<li><a href="https://gamemath.com/">3D Math Primer for Graphics and Game Development</a> [book]</li>
+<li><a href="https://immersivemath.com/ila/index.html">Immersive Math</a> [book]</li>
+<li><a href="https://www.realtimerendering.com/Real-Time_Rendering_4th-Appendices.pdf">Real Time Rendering: Linear Algebra and Trigonometry</a> [book]</li>
+<li><a href="https://linear.axler.net/">Linear Algebra Done Right</a> [book]</li>
+<li><a href="https://sites.google.com/a/brown.edu/sergei-treil-homepage/linear-algebra-done-wrong">Linear Algebra Done Wrong</a> [book]</li>
+<li><a href="https://pomax.github.io/bezierinfo/">A Primer on Bézier Curves</a></li>
+<li><a href="https://chortle.ccsu.edu/VectorLessons/index.html">Vector Math for 3D Computer Graphics</a> [article]</li>
+<li><a href="https://antongerdelan.net/teaching/3dprog1/maths_cheat_sheet.pdf">3D Math Cheat Sheet</a> [pdf]</li>
+<li><a href="https://randygaul.github.io/math/2022/09/18/Game-Math-101-Writing-your-Own-2D-Math-in-CPP.html">Game Math 101, Writing your Own 2D Math in C++</a> [article]</li>
+</ul>
+<h2 id="fundamentals"><a class="header" href="#fundamentals">Fundamentals</a></h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=h9Z4oGN89MU">How do Graphics Cards Work? Exploring GPU Architecture</a> [video]</li>
+<li><a href="https://www.youtube.com/watch?v=C8YtdC8mxTU">How do Video Game Graphics Work?</a> [video]</li>
+<li><a href="https://www.youtube.com/watch?v=iOlehM5kNSk">What Makes Computer Generated Images Look Real?</a> [video]</li>
+<li><a href="https://www.youtube.com/watch?v=gsZiJeaMO48">How Ray Tracing (Modern CGI) Works And How To Do It 600x Faster</a> [video]</li>
+<li><a href="https://www.youtube.com/watch?v=QyjyWUrHsFc">A Brief History of Graphics</a> [video]</li>
+<li><a href="https://magcius.github.io/xplain/article/rast1.html">Basic 2D Rasterization</a> [article]</li>
+<li><a href="https://www.gabrielgambetta.com/computer-graphics-from-scratch/">Computer Graphics from Scratch</a> [book]</li>
+<li><a href="https://www.scratchapixel.com/">Scratchpixel: Learn Computer Graphics Programming</a> [book]</li>
+<li><a href="https://raytracing.github.io/">Ray Tracing in One Weekend</a> [book]</li>
+<li><a href="https://tayfunkayhan.wordpress.com/2018/11/24/rasterization-in-one-weekend/">Rasterization in One Weekend</a> [article]</li>
+<li><a href="https://github.com/ssloy/tinyraytracer/wiki">Tiny RayTracer</a> [article]</li>
+<li><a href="https://github.com/ssloy/tinyraycaster/wiki">Tiny RayCaster</a> [article]</li>
+<li><a href="https://github.com/ssloy/tinyrenderer/wiki">Tiny Renderer</a> [article]</li>
+<li><a href="https://lisyarus.github.io/blog/posts/implementing-a-tiny-cpu-rasterizer-part-1.html">Implmenting A Tiny CPU Rasterizer</a> [article]</li>
+<li><a href="https://www.jeremyong.com/cpp/2021/05/20/graphics-pipelines-for-young-bloods/">A Trip Through the Graphics Pipelines for Young Bloods</a> [article]</li>
+<li><a href="https://fgiesen.wordpress.com/2011/07/09/a-trip-through-the-graphics-pipeline-2011-index/">A Trip Through the Graphics Pipeline</a> [article]</li>
+<li><a href="https://alaingalvan.gitbook.io/a-trip-through-the-graphics-pipeline">A Trip Through The Graphics Pipeline</a> [article]</li>
+<li><a href="https://anteru.net/blog/2018/intro-to-compute-shaders/">Introduction to Compute Shaders</a> [article]</li>
+<li><a href="https://drive.google.com/file/d/12ahbqGXNfY3V-1Gj5cvne2AH4BFWZHGD/view">GPU Architectures</a> [slides]</li>
+<li><a href="https://math.hws.edu/graphicsbook/index.html">Introduction to Computer Graphics</a> [book]</li>
+<li><a href="https://avikdas.com/build-your-own-raytracer/">Build Your Own 3D Renderer</a> [article]</li>
+</ul>
+<h2 id="opengl"><a class="header" href="#opengl">OpenGL</a></h2>
+<ul>
+<li><a href="https://learnopengl.com/">Learn OpenGL</a> [book]</li>
+<li><a href="https://ogldev.org/">OpenGL Step By Step</a> [video]</li>
+<li><a href="https://www.opengl-tutorial.org/">OpenGL Tutorials</a> [book]</li>
+<li><a href="https://open.gl/introduction">OpenGL Introduction</a> [article]</li>
+<li><a href="https://antongerdelan.net/opengl/">Anton’s OpenGL 4 Tutorials</a> [book] [article]</li>
+<li><a href="https://www.gingerbill.org/article/2024/11/10/opengl-is-not-right-handed/">OpenGL Is Not Right-Handed</a> [article]</li>
+<li><a href="https://juandiegomontoya.github.io/modern_opengl.html">Best Practices for Modern OpenGL</a> [article]</li>
+<li><a href="https://github.com/fendevel/Guide-to-Modern-OpenGL-Functions">A Guide to Modern OpenGL Functions</a> [article]</li>
+<li><a href="https://www.youtube.com/playlist?list=PLPaoO-vpZnumdcb4tZc4x5Q-v7CkrQ6M-">OpenGl Tutorials</a> [video]</li>
+<li><a href="https://docs.gl/">Docs GL - OpenGL Documentation</a> [documentation]</li>
+<li><a href="https://www.mbsoftworks.sk/tutorials/">MBSoftworks OpenGL Tutorials</a> [article]</li>
+<li><a href="https://duriansoftware.com/joe/an-intro-to-modern-opengl.-table-of-contents">An Intro to Modern OpenGL</a> [book]</li>
+<li><a href="https://opengl.gpuinfo.org/">OpenGL Hardware Database</a> [other]</li>
+<li><a href="https://github.com/bartvbl/A-Hitchhikers-Guide-to-OpenGL">A Hitchhiker’s Guide to OpenGL</a> [book]</li>
+<li><a href="https://developer.nvidia.com/opengl-vulkan">How to make OpenGL usage Vulkan like</a></li>
+</ul>
+<h2 id="shaders"><a class="header" href="#shaders">Shaders</a></h2>
+<ul>
+<li><a href="https://lettier.github.io/3d-game-shaders-for-beginners/index.html">3D Game Shaders For Beginners</a></li>
+<li><a href="https://thebookofshaders.com/">The Book of Shaders</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL8vNj3osX2PzZ-cNSqhA8G6C1-Li5-Ck8">Shaders Monthly</a></li>
+<li><a href="https://www.shadertoy.com/">Shadertoy</a></li>
+<li><a href="https://www.shadertoy.com/view/Md23DV">GLSL 2D Tutorials</a></li>
+<li><a href="https://github.com/stackgl/shader-school">Shader School</a></li>
+<li><a href="https://antongerdelan.net/opengl/shaders.html">OpenGL 4 Shaders</a></li>
+<li><a href="https://www.youtube.com/watch?v=f4s1h2YETNY">Introduction to Shader Art Coding</a></li>
+<li><a href="https://code.tutsplus.com/series/a-beginners-guide-to-coding-graphics-shaders--cms-834">A Beginner’s Guide to Coding Graphic Shaders</a> [article]</li>
+</ul>
+<h2 id="tooling-debuggers"><a class="header" href="#tooling-debuggers">Tooling (Debuggers)</a></h2>
+<ul>
+<li><a href="https://renderdoc.org/">RenderDoc</a></li>
+<li><a href="https://developer.nvidia.com/nsight-graphics">NVIDIA Nsight Graphics</a></li>
+<li><a href="https://devblogs.microsoft.com/pix/introduction/">PIX</a></li>
+<li><a href="https://github.com/EpicGamesExt/raddebugger">RAD Debugger</a></li>
+</ul>
+<h2 id="vulkan"><a class="header" href="#vulkan">Vulkan</a></h2>
+<ul>
+<li><a href="https://developer.nvidia.com/transitioning-opengl-vulkan">Transitioning from OpenGL to Vulkan</a></li>
+<li><a href="https://registry.khronos.org/vulkan/specs/1.1/html/vkspec.html">Vulkan Spec</a> [documentation]</li>
+<li><a href="https://vkdoc.net/">Vulkan Hub</a> [documentation]</li>
+<li><a href="https://www.intel.com/content/www/us/en/developer/articles/training/api-without-secrets-introduction-to-vulkan-part-1.html">API Without Secrets</a> [article]</li>
+<li><a href="https://renderdoc.org/vulkan-in-30-minutes.html">Vulkan In 30 Minutes</a> [article]</li>
+<li><a href="https://vkguide.dev/">Vulkan Guide</a> [book]</li>
+<li><a href="https://vulkan-tutorial.com/">Vulkan Tutorial</a> [book]</li>
+<li><a href="https://github.com/SaschaWillems/Vulkan">Vulkan Examples</a> [source code]</li>
+<li><a href="https://www.fasterthan.life/blog/2017/7/11/i-am-graphics-and-so-can-you-part-1">I am Graphics and So Can You</a> [article]</li>
+<li><a href="https://zeux.io/2020/02/27/writing-an-efficient-vulkan-renderer/">Writing an Efficient Vulkan Renderer</a> [article]</li>
+<li><a href="https://www.jeremyong.com/vulkan/graphics/rendering/2018/11/22/vulkan-synchronization-primer/">Vulkan Synchronization Primer - Part I</a> [article]</li>
+<li><a href="https://www.jeremyong.com/vulkan/graphics/rendering/2018/11/23/vulkan-synchonization-primer-part-ii/">Vulkan Synchronization Primer - Part II</a> [article]</li>
+<li><a href="https://www.youtube.com/playlist?list=PLmIqTlJ6KsE1Jx5HV4sd2jOe3V1KMHHgn">Vulkan Lecture Series</a> [video]</li>
+<li><a href="https://github.com/keengames/vulkan_backend">Keen Games’ Vulkan Backend Snapshot</a> [source code]</li>
+<li><a href="https://paminerva.github.io/docs/LearnVulkan/LearnVulkan">Learn Vulkan from code samples</a> [article]</li>
+<li><a href="https://nvpro-samples.github.io/vk_raytracing_tutorial_KHR/">NVIDIA Vulkan Ray Tracing Tutorial</a> [article]</li>
+<li><a href="https://www.khronos.org/blog/ray-tracing-in-vulkan">Ray Tracing in Vulkan</a></li>
+<li><a href="https://www.youtube.com/@Vulkan">Vulkan’s YouTube Channel</a> [video]</li>
+<li><a href="https://youtube.com/playlist?list=PL8327DO66nu9qYVKLDmdLW_84-yE4auCR&amp;si=ACBr1r6B8heGStsV">Vulkan C++ game engine tutorials</a> [video]</li>
+<li><a href="https://developer.nvidia.com/blog/vulkan-dos-donts/">Vulkan DO’s and DONT’s</a> [article]</li>
+</ul>
+<h2 id="directx-11"><a class="header" href="#directx-11">DirectX 11</a></h2>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/windows/win32/direct3d11/atoc-dx-graphics-direct3d-11">DirectX 11 Documentation</a></li>
+<li><a href="https://graphicsprogramming.github.io/learnd3d11/">Learn DirectX 11</a></li>
+<li><a href="https://www.rastertek.com/tutdx11win10.html">DirectX 11 on Windows 10 Tutorial</a></li>
+<li><a href="https://www.braynzarsoft.net/viewtutorial/q16390-braynzar-soft-directx-11-tutorials">DirectX 11 - Braynzar Soft Tutorials</a></li>
+<li><a href="https://gist.github.com/d7samurai/261c69490cce0620d0bfc93003cd1052">Minimal D3D11, Part I</a></li>
+<li><a href="https://gist.github.com/d7samurai/aee35fd5d132c51e8b0a78699cbaa1e4">Minimal D3D11, Part II</a></li>
+<li><a href="https://gist.github.com/d7samurai/abab8a580d0298cb2f34a44eec41d39d">Minimal D3D11, Part III</a></li>
+<li><a href="https://gist.github.com/d7samurai/1e9a1f1a366740f7d8a3a20397fcfa6b">Minimal D3D11 bonus material: extra minimal triangle</a></li>
+<li><a href="https://gist.github.com/d7samurai/9f17966ba6130a75d1bfb0f1894ed377">Minimal D3D11 bonus material: pixel art antialiasing</a></li>
+<li><a href="https://gist.github.com/d7samurai/8f91f0343c411286373161202c199b5c">Minimal D3D11 sprite renderer</a></li>
+<li><a href="https://gist.github.com/d7samurai/e51adec8a440126d028b87406556079b">Minimal D3D11 sprite renderer NEO</a></li>
+</ul>
+<h2 id="directx-12"><a class="header" href="#directx-12">DirectX 12</a></h2>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/windows/win32/direct3d12/direct3d-12-graphics">DirectX 12 Documentation</a></li>
+<li><a href="https://microsoft.github.io/DirectX-Specs/">DirectX 12 Spec</a></li>
+<li><a href="https://github.com/microsoft/DirectX-Graphics-Samples">Microsoft’s DirectX Samples</a></li>
+<li><a href="https://alextardif.com/DX12Tutorial.html">A Gentle Introduction to DirectX 12</a></li>
+<li><a href="https://paminerva.github.io/LearnDirectX/presentation.html#">Learn DirectX 12</a></li>
+<li><a href="https://github.com/PAMinerva/LearnDirectX-samples">Learn DirectX 12 Samples</a></li>
+<li><a href="https://www.3dgep.com/learning-directx-12-1/">Learning DirectX 12</a></li>
+<li><a href="https://therealmjp.github.io/posts/gpu-memory-pool/">GPU Memory Pools in D3D12</a></li>
+<li><a href="https://developer.nvidia.com/blog/tag/advanced-api-performance">Nvidia’s API Performance Blog</a></li>
+<li><a href="https://github.com/stefanpgd/Compute-DirectX12-Tutorial">Compute with DirectX 12</a></li>
+<li><a href="https://therealmjp.github.io/posts/breaking-down-barriers-part-1-whats-a-barrier/">Breaking Down Barriers</a></li>
+<li><a href="https://rtarun9.github.io/blogs/bindless_rendering/">Bindless Rendering in DirectX12 and SM6.6</a></li>
+<li><a href="https://paminerva.github.io/docs/LearnDirectX/LearnDirectX">Learn DirectX from code samples</a></li>
+</ul>
+<h2 id="metal"><a class="header" href="#metal">Metal</a></h2>
+<ul>
+<li><a href="https://developer.apple.com/metal/">Metal Documentation</a></li>
+<li><a href="https://developer.apple.com/metal/cpp/">Getting Started with Metal-cpp</a></li>
+<li><a href="https://metaltutorial.com/">Metal Tutorial</a></li>
+<li><a href="https://gist.github.com/ole/a1c95cf6a4ebbef2a7827a911301d503">30 Days of Metal</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLn3eTxaOtL2N8v1zUWS1fxaQVI3L3wG0w">MacOS Metal with C++</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLjgVkKlBynWwRbyQASXbpB1fo8GuWNjYl">3D Game Engine with C++ and Metal</a></li>
+<li><a href="https://github.com/metal-by-example">Metal By Example</a></li>
+<li><a href="https://github.com/MattGuerrette/Metal">Metal C++ Examples</a></li>
+<li><a href="https://github.com/LeeTeng2001/metal-cpp-cmake">Learning Metal with metal-cpp</a></li>
+<li><a href="https://github.com/gnikoloff/drawing-graphics-on-apple-vision-with-metal-rendering-api">Drawing Graphics on Apple Vision with the Metal Rendering API</a></li>
+</ul>
+<h2 id="webgl"><a class="header" href="#webgl">WebGL</a></h2>
+<ul>
+<li><a href="http://www.webglacademy.com/">WebGL Academy</a></li>
+<li><a href="https://learnwebgl.brown37.net/">Learn WebGL</a></li>
+<li><a href="https://webglfundamentals.org/">WebGL Fundamentals</a></li>
+<li><a href="https://webgl2fundamentals.org/">WebGL2 Fundamentals</a></li>
+</ul>
+<h2 id="webgpu"><a class="header" href="#webgpu">WebGPU</a></h2>
+<ul>
+<li><a href="https://codelabs.developers.google.com/your-first-webgpu-app">Your First WebGPU App</a></li>
+<li><a href="https://sotrh.github.io/learn-wgpu/">Learn WebGPU</a></li>
+<li><a href="https://eliemichel.github.io/LearnWebGPU/">Learn WebGPU for C++</a></li>
+<li><a href="https://webgpufundamentals.org/">WebGPU Fundamentals</a></li>
+<li><a href="https://shi-yan.github.io/webgpuunleashed/">WebGPU Unleashed</a> [book]</li>
+<li><a href="https://compute.toys/">Compute Toys</a> (Shadertoy for WebGPU shaders)</li>
+</ul>
+<h2 id="physics"><a class="header" href="#physics">Physics</a></h2>
+<ul>
+<li><a href="https://gamephysicsweekend.github.io/">Game Physics in One Weekend Series</a> [book]</li>
+</ul>
+<h2 id="ai"><a class="header" href="#ai">AI</a></h2>
+<ul>
+<li><a href="https://www.ea.com/technology/news/machine-learning-game-devs-part-1">Machine Learning for Game Devs</a></li>
+<li><a href="https://boksajak.github.io/blog/DeepLearning">Crash Course in Deep Learning</a></li>
+</ul>
+<h2 id="courses"><a class="header" href="#courses">Courses</a></h2>
+<ul>
+<li><a href="https://www.khanacademy.org/computing/pixar">Pixar in a Box</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLplnkTzzqsZTfYh4UbhLGpI5kGd5oW_Hh">Introduction to Computer Graphics</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLplnkTzzqsZS3R5DjmCQsqupu43oS9CFN">Interactive Computer Graphics</a></li>
+<li><a href="http://15462.courses.cs.cmu.edu/fall2020/">CMU 15-462/662: Computer Graphics</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLQ3UicqQtfNuBjzJ-KEWmG1yjiRMXYKhh">6.837: Introduction to Computer Graphics</a></li>
+<li><a href="https://graphicscodex.com/">Graphics Codex</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLujxSBD-JXgnGmsn7gEyN28P1DnRZG7qi">TU Wien Rendering / Ray Tracing Course</a></li>
+</ul>
+<h2 id="looking-for-work"><a class="header" href="#looking-for-work">Looking for Work</a></h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=AoTxTz31nXY">How to Start a Career in Computer Graphics Programming</a> [video]</li>
+<li><a href="https://old.reddit.com/r/gameenginedevs/comments/17nsp1m/how_to_get_into_game_engine_programming/k7v4l91/?context=3">If You’re Serious About Pursuing a Career in Computer Graphics</a> [comment]</li>
+<li><a href="https://github.com/unpacklo/game-programmer-resume-tips">Game Programmer Resume Tips</a> [article]</li>
+<li><a href="https://alextardif.com/GraphicsJobGuide.html">Applying for Entry Level Graphic Jobs in Games</a> [article]</li>
+<li><a href="https://www.reddit.com/r/GraphicsProgramming/comments/ymt0qq/leetcode_for_graphics_interviews/iv60as6/?context=3">Leetcode for Graphics Interviews?</a> [comment]</li>
+<li><a href="https://old.reddit.com/r/GraphicsProgramming/comments/1fu8qi4/cant_get_a_job_feeling_very_desperate_and/lpyjmmj/">Advice on Looking for Work from a AAA Game Dev</a> [comment]</li>
+<li><a href="https://clementpirelli.wordpress.com/2023/05/31/interviewing-for-junior-programming-positions/">Interviewing for Junior Programming Positions</a> [article]</li>
+<li><a href="https://erkaman.github.io/posts/junior_graphics_programmer_interview.html">Junior Graphics Programmer Interview Questions</a> [article]</li>
+<li><a href="https://aras-p.info/blog/2016/11/05/Interview-questions/">Interview Questions</a> [article]</li>
+<li><a href="https://www.jeremyong.com/graphics/interviewing/2023/08/05/graphics-programmer-interviewing/">Interviewing Graphics Programmers</a> [article]</li>
+<li><a href="https://bartwronski.com/2022/01/04/insider-guide-to-tech-interviews/">Insider Guide to Tech Interviews</a> [article]</li>
+<li><a href="https://lazyfoo.net/articles/article12_interviewing-for-game-programming/index.php">Interviewing for Game Programming</a> [article]</li>
+<li><a href="https://www.youtube.com/playlist?list=PLW3Zl3wyJwWPoqjWDgybGxOAZhdUBAhyR">How to Get A Job in Game Design</a> [video]</li>
+<li><a href="https://www.reddit.com/r/gamedev/comments/9n847g/18_months_of_game_programming_interviews/">18 Months of Game Programming Interviews</a> [comment]</li>
+<li><a href="https://www.reddit.com/r/GraphicsProgramming/comments/1arygtk/graphics_interview_at_meta_reality_labs/">Graphics Interview at Meta Reality Labs</a> [comment]</li>
+</ul>
+<h2 id="research-papers"><a class="header" href="#research-papers">Research Papers</a></h2>
+<ul>
+<li><a href="https://morgan3d.github.io/advanced-ray-tracing-course/reading-research.pdf">How to Read Rendering Research Papers</a></li>
+<li><a href="https://morgan3d.github.io/advanced-ray-tracing-course/present-research.pdf">How to Present a Rendering Paper</a></li>
+<li><a href="https://jcgt.org/">Journal of Computer Graphics Techniques</a></li>
+<li><a href="https://kesen.realtimerendering.com/">Ke-Sen Huang’s Home Page</a></li>
+<li><a href="https://www.highperformancegraphics.org/2024/index.html">High Performance Graphics</a></li>
+<li><a href="https://enginearchitecture.org/index.htm">Rendering Engine Architecture</a></li>
+<li><a href="https://www.cs.cmu.edu/~kmcrane/">Keenan Crane</a></li>
+<li><a href="https://www.ea.com/technology/research/rendering-and-lighting">EA - Rendering and Lighting Research</a></li>
+<li><a href="https://www.guerrilla-games.com/tags/publication">Guerilla Games - Publication</a></li>
+<li><a href="https://research.activision.com/">Activision Research</a></li>
+<li><a href="https://rgl.epfl.ch/publications">Realistic Graphics Lab Publications</a></li>
+<li><a href="https://cg.ivd.kit.edu/english/publikationen.php">Kit Computer Graphics Group</a></li>
+<li><a href="https://graphics.cs.utah.edu/research/publications/">Utah Graphics Lab</a></li>
+<li><a href="https://www.valvesoftware.com/en/publications">Valve Corporation Publications</a></li>
+<li><a href="https://gpuopen.com/learn/publications/">AMD Publications</a></li>
+<li><a href="https://research.nvidia.com/publications">Nvidia Publications</a></li>
+<li><a href="https://unity.com/publications">Unity Publications</a></li>
+<li><a href="https://graphics.pixar.com/library/">Pixar Research</a></li>
+<li><a href="http://graphics.berkeley.edu/papers/">U.C. Berkeley Computer Graphics Papers</a></li>
+</ul>
+<h2 id="conferences"><a class="header" href="#conferences">Conferences</a></h2>
+<ul>
+<li><a href="https://www.youtube.com/channel/UC9V4KS8ggGQe_Hfeg1OQrWw">SIGGRAPH Advances in Real-Time Rendering</a></li>
+<li><a href="https://www.youtube.com/@HighPerformanceGraphics">High-Performance Graphics</a></li>
+<li><a href="https://www.youtube.com/@renderingenginearchitectur3543">Rendering Engine Architecture</a></li>
+<li><a href="https://www.youtube.com/@DigitalDragonsForGamedev/">Digital Dragons</a></li>
+<li><a href="https://youtube.com/@graphicsprogrammingconference">Graphics Programming Conference</a></li>
+</ul>
+<h2 id="blogs"><a class="header" href="#blogs">Blogs</a></h2>
+<ul>
+<li><a href="https://www.realtimerendering.com/blog/">Real Time Rendering</a></li>
+<li><a href="https://blog.demofox.org/">Blog At The Bottom of The Sea</a></li>
+<li><a href="https://erkaman.github.io/articles.html">Eric Arnebäck</a></li>
+<li><a href="https://ciechanow.ski/archives/">Bartosz Ciechanowski</a></li>
+<li><a href="https://www.adriancourreges.com/blog/">Adrian Courrèges</a></li>
+<li><a href="https://interplayoflight.wordpress.com/">Interplay of Light</a></li>
+<li><a href="https://mamoniem.com/category/behind-the-pretty-frames/">Behind the Pretty Frames</a></li>
+<li><a href="https://alain.xyz/blog">Alain Galvan</a></li>
+<li><a href="https://iquilezles.org/">Inigo Quilez</a></li>
+<li><a href="https://www.jendrikillner.com/tags/weekly/">Graphics Programming Weekly</a></li>
+<li><a href="https://www.elopezr.com">The Code Corsair</a></li>
+<li><a href="https://simonschreibt.de/game-art-tricks/">Game Art Tricks</a></li>
+<li><a href="https://boksajak.github.io/">GFX Caffeinist Blog</a></li>
+</ul>
+<h2 id="communities"><a class="header" href="#communities">Communities</a></h2>
+<ul>
+<li><a href="https://old.reddit.com/r/GraphicsProgramming/">r/GraphicsProgramming</a></li>
+<li><a href="https://discord.com/invite/m35J6Bk">Graphics Programming Discord</a></li>
+</ul>
+<h2 id="others"><a class="header" href="#others">Others</a></h2>
+<ul>
+<li><a href="https://blog.mecheye.net/2023/09/how-to-write-a-renderer-for-modern-apis/">How to write a renderer for modern graphics APIs</a> [article]</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="history_of_graphics.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="history_of_graphics.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="ace.js"></script>
+        <script src="editor.js"></script>
+        <script src="mode-rust.js"></script>
+        <script src="theme-dawn.js"></script>
+        <script src="theme-tomorrow_night.js"></script>
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
